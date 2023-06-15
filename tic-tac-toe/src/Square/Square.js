@@ -1,10 +1,18 @@
 import React from 'react'
+import { useState } from 'react'
 
-function Square ({value}) {
+function Square ({value, onSquareClick}) {
+
+    // const [value, setValue] = useState(null)    
+
+    // function handleClick () {
+    //    setValue("X")
+    // }
+
     return (
-        <div>
-            <button className="square">{value}</button>
-        </div>
+        
+    <button className="square" onClick={onSquareClick}>{value}</button>
+
     )
 }
 
